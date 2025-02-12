@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0 4px;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2d2d2d;
+  color: #969693;
+  position: relative;
+}
+textarea {
+  width: 100%;
+  /* height: 200px; */
+  height: 91%;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 12px 20px;
+  border: rgba(0, 0, 0, 0.211);
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+}
+textarea:focus-visible {
+  outline: none;
+}
+.header {
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.header .icon {
+  color: #d4d4d4;
+  background-color: #424243;
+  border-radius: 8px;
+  border: 1px solid #535354;
+  position: absolute;
+  bottom: 12px;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 0.5s;
+}
+.header .icon small {
+  position: absolute;
+  bottom: 2px;
+  /* font-size: 10px; */
+  /* opacity: .1; */
+  z-index: 2;
+}
+
+.header .icon svg {
+  transition: all 0.5s;
+  transform: scale(1);
+  z-index: 10;
+  margin-bottom: 10px;
+}
+.header .icon:hover svg {
+  transform: scale(3);
+}
+button {
+  padding: 8px 16px;
+  font-family: monospace;
+  color: #d4d4d4;
+  cursor: pointer;
+  background-color: #4242437a;
+  border-radius: 8px;
+  border: 1px solid #5353547d;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+button:hover {
+  color: #d4d4d4;
+  background-color: #424243;
+  border-radius: 8px;
+  border: 1px solid #535354;
+}
+.output {
+  /* margin-top: 20px; */
+  /* border: 1px solid #ccc; */
+}
+.container {
+  display: flex;
+  gap: 4px;
+  justify-content: stretch;
+  height: 100%;
+}
